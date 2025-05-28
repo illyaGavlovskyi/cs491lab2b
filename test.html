@@ -1,23 +1,22 @@
 <!doctype HTML>
 <html>
-<title>PBX</title>
-
-<head>
-    <style>
-        p {
-            font-size: 15px;
-        }
-    </style>
-    <script>
-        function toggleBtn() {
-            var btn = document.getElementById("btn");
-            btn.value = (btn.value.charAt(0) =="D" ? "Call" : "Dial");
-        }
-    </script>
-</head>
-
-<body>
-    <p>Test</p>
-</body>
-
+    <title>PBX</title>
+    <head>
+        <style>
+            p {
+                font-size: 15px;
+            }
+        </style>
+        <script>
+            function toggleBtn() {
+                var btn = document.getElementById("btn");
+                btn.value = (btn.value.charAt(0) == "D" ? "Call" : "Dial");
+            }
+        </script>
+    </head>
+    <body>
+        <p>Test</p>
+        <input type="text" id="txt" value="">
+        <input type="button" id="btn" value="Dial" onClick="toggleBtn()">
+    </body>
 </html>
